@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/dilame/instagram-private-api",
   "scripts": {
-    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "build": "rimraf dist && tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json -c tslint.json",
-    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "typecheck": "tsc --noEmit",
     "prepare": "npm run build",
     "test": "mocha --inline-diffs --timeout 1000000 tests/run.js",
     "generate-interface": "ts-node ./tools/response-to-interface.ts"
