@@ -38,13 +38,6 @@ export interface TimelineFeedResponseMedia_or_ad {
   image_versions2?: TimelineFeedResponseImage_versions2;
   original_width?: number;
   original_height?: number;
-  is_dash_eligible?: number;
-  video_dash_manifest?: string;
-  video_codec?: string;
-  number_of_qualities?: number;
-  video_versions?: TimelineFeedResponseVideoVersionsItem[];
-  has_audio?: boolean;
-  video_duration?: number;
   view_count?: number;
   user: TimelineFeedResponseUser;
   can_viewer_reshare?: boolean;
@@ -223,6 +216,13 @@ export interface TimelineFeedResponseCarouselMediaItem {
   overlay_text?: string;
   overlay_title?: string;
   overlay_subtitle?: string;
+  is_dash_eligible?: number;
+  video_dash_manifest?: string;
+  video_codec?: string;
+  number_of_qualities?: number;
+  video_versions?: TimelineFeedResponseVideoVersionsItem[];
+  has_audio?: boolean;
+  video_duration?: number;
 }
 export interface TimelineFeedResponseUsertags {
   in: TimelineFeedResponseInItem[];
